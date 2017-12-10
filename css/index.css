@@ -10,7 +10,7 @@
   font-family:"iconfont" !important;
   font-size:16px;font-style:normal;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
+  /* -webkit-text-stroke-width: 0.2px; */
   -moz-osx-font-smoothing: grayscale;
 }
 p,body,h1,h2,h3,h4,h5,h6,ul,li,i{
@@ -39,27 +39,25 @@ a{
 	position: relative;
 	top: 0;
 	left: 0;
+	line-height: 30px;
 }
 .top_nav a{
 	float: right;
 	font-size: 12px;
 	color: #999999;
-	margin-right: 14px;
-	margin-top: 8px;
+	margin-right: 10px;
 }
 .top_nav span{
 	float: right;
 	font-size: 12px;
 	color: #CCCCCC;
-	margin-right: 14px;
-	margin-top: 8px;
+	margin-right: 10px;
 }
 .top_nav .tn3{
 	float: right;
 	font-size: 12px;
 	color:  #999999;
-	margin-right: 14px;
-	margin-top: 8px;
+	margin-right: 10px;
 }
 .top_nav .tn1{
 	color: #F10215;
@@ -73,8 +71,11 @@ a{
 .top_nav .tn4{
 	color: #C81623;
 	float: left;
-	margin-top: 8px;
+	/* margin-top: 8px; */
 	margin-left: 204px;
+}
+.top_nav i{
+	font-style: normal;
 }
 .top_nav img{
 	width: 190px;
@@ -83,27 +84,76 @@ a{
 	position: absolute;
 	top: 0;
 	left: 0;
-
+}
+.top_nav .qr{
+	width: 60px;
+	height: 60px;
+	float: right;
+	position: absolute;
+	top: 30px;
+	left: 1122px;
+	z-index: 15;
 }
 .top_nav .tn4:hover{
 	color: #C81623;
 }
-.top_nav .beijing{
-	float: left;
+.top_nav .tn6{
+	float: right;
+	width: 65px;
+	margin-right: 10px;
+	position: relative;
+}
+.top_nav .tn6:hover{
+	background: #fff;
+}
+.top_nav .tn6 a{
+	text-align: center;
+	margin: 0;
+}
+.tn6 .tn2:hover{
+	color: #C81623;
+}
+.top_nav .tn4>span{
 	font-size: 12px;
 	color:  #999999;
-	margin-left: 4px;
-	margin-top: 8px;
+	margin: 0 0 0 4px;
 }
-.top_nav .beijing：hover{
-	
+.top_nav .tn4:hover{
+	background: #fff;
+}
+.top_nav .item4{
+	line-height: 24px;
+	width: 280px;
+	height: auto;
+	position: absolute;
+	top: 30px;
+	background: #fff;
+	z-index: 10;
+	display: none;
+}
+.top_nav .active{
+	display: block;
+}
+.item4 .item4_t{
+	padding: 10px 0 10px 15px;
+	line-height: 24px;
+	height: auto;
+	overflow: hidden;
+}
+.item4 .its{
+	width: 126px;
+	height: 24px;
+	float: left;
+	text-align: left;
+}
+.item4 .its a{
+	float: none;
 }
 /* 顶部导航结束 */
 .box0{
 	width: 100%;
 	height: auto;
 	background-color: #F6F6F6;
-	/* background-color: pink; */
 }
 .box1{
 	width: 1190px;
@@ -270,7 +320,10 @@ a{
 	background: #fff;
 	display: none;
 }
-.banner .left ul>li:hover .cate{
+/* .banner .left ul>li:hover .cate{
+	display: block;
+} */
+.banner .active{
 	display: block;
 }
 .banner .cate_nav{
@@ -1301,7 +1354,14 @@ a{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: flex-end;
-	background-color: #fff: 
+	background-color: #fff;
+	display: none;
+}
+.find .find_right p:hover{
+	color: #C81623;
+}
+.find .find_active{
+	display: flex;
 }
 .find_right .right_s{
 	width: 122px;
